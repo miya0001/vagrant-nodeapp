@@ -2,7 +2,6 @@
 
 sudo apt-get autoremove -y
 sudo apt-get install -y nodejs npm libcap2-bin mongodb git -y
-sudo npm cache clean
 sudo npm install n -g
 sudo n latest
 sudo ln -sf /usr/local/bin/node /usr/bin/node
@@ -15,6 +14,9 @@ if [ -n "$GIT_REPO" ]; then
   git clone $GIT_REPO /vagrant/www
   cd /vagrant/www
   npm install
-  non run build
+  npm run build
   npm start
 fi
+
+sudo npm cache clean
+sudo apt-get clean
