@@ -8,8 +8,9 @@ sudo ln -sf /usr/local/bin/node /usr/bin/node
 sudo apt-get remove nodejs npm -y
 sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
 
-if [[ ! -d /root/.ssh ]]; then
+if [[ ! -e ~/.ssh/known_hosts ]]; then
   ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+  chmod 600 ~/.ssh/known_hosts
 fi
 
 if [ -n "$GIT_REPO" ]; then
