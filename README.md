@@ -23,6 +23,7 @@ This vagrant environment will execute them automatically after provision.
 
 ## Features
 
+* Ubuntu 14.04 LTS
 * Latest version of nodejs is installed.
 * Agent forwarding over SSH connections is enabled.
 * You can switch Node version via [n](https://github.com/tj/n).
