@@ -1,6 +1,12 @@
-# Development environment for Node Apps
+# Development environment for Node App
 
 ## Getting Started
+
+```
+$ vagrant up
+```
+
+Or
 
 ```
 $ GIT_REPO=https://github.com/<your-acount>/<your-app> vagrant up
@@ -8,7 +14,7 @@ $ GIT_REPO=https://github.com/<your-acount>/<your-app> vagrant up
 
 Then visit [http://192.168.33.10](http://192.168.33.10).
 
-You should define follwoing commands in your app's packgage.json.
+If you want to use `$GIT_REPO`, you should define follwoing commands in your app's packgage.json.
 
 * `npm buid`
 * `npm start`
