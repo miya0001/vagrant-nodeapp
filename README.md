@@ -17,6 +17,5 @@ This vagrant environment will execute them automatically after provision.
 
 ## What's Installed
 
-* nodejs & npm
-  * [n](https://github.com/tj/n)
+* Latest version of nodejs is installed.
 * Agent forwarding over SSH connections is enabled.
