@@ -25,6 +25,7 @@ This vagrant environment will execute them automatically after provision.
 
 * Ubuntu 14.04 LTS
 * Latest version of Node.js is installed.
+* MongoDB is installed.
 * Agent forwarding over SSH connections is enabled.
 * You can switch Node.js version via [n](https://github.com/tj/n).
 

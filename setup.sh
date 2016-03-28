@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sudo apt-get autoremove -y
-sudo apt-get install -y nodejs npm libcap2-bin git -y
+sudo apt-get install -y nodejs npm libcap2-bin mongodb git -y
 sudo npm cache clean
 sudo npm install n -g
 sudo n latest
