@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-sudo apt-get install -y nodejs npm libcap2-bin git
+sudo apt-get autoremove -y
+sudo apt-get install -y nodejs npm libcap2-bin git -y
 sudo npm cache clean
 sudo npm install n -g
 sudo n stable
@@ -9,7 +10,7 @@ sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
 
 echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
-if $GIT_REPO; then
+if [ -n "$GIT_REPO" ]; then
   git clone $GIT_REPO /vagrant/www
   cd /vagrant/www
   npm install
