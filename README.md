@@ -9,7 +9,7 @@ $ vagrant up
 Or
 
 ```
-$ GIT_REPO=https://github.com/<your-acount>/<your-app> vagrant up
+$ GIT_REPO=https://github.com/<your-account>/<your-app> vagrant up
 ```
 
 Then visit [http://192.168.33.10](http://192.168.33.10).
