@@ -1,4 +1,4 @@
-# Development environment for Node App
+# Development environment for Node.js App
 
 ## Getting Started
 
@@ -24,29 +24,29 @@ This vagrant environment will execute them automatically after provision.
 ## Features
 
 * Ubuntu 14.04 LTS
-* Latest version of nodejs is installed.
+* Latest version of Node.js is installed.
 * Agent forwarding over SSH connections is enabled.
-* You can switch Node version via [n](https://github.com/tj/n).
+* You can switch Node.js version via [n](https://github.com/tj/n).
 
-## Switching the version of Node.
+## Switching the version of the Node.js.
 
-### Installing a specific version of Node.
+### Installing a specific version of the Node.js.
 
-Installs stable version of Node.
+Installs stable version of Node.js.
 
 ```
 $ sudo n stable
 ```
 
-Installs LTS version of Node.
+Installs LTS version of Node.js.
 
 ```
 $ sudo n lts
 ```
 
-### Switching to the specific version of Node.
+### Switching to the specific version of the Node.js.
 
-Type n to prompt selection of an installed node. Use the up / down arrow to navigate, and press enter or the right arrow to select, or ^C to cancel:
+Type n to prompt selection of an installed Node.js. Use the up / down arrow to navigate, and press enter or the right arrow to select, or ^C to cancel:
 
 ```
 $ sudo n
