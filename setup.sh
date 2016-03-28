@@ -7,8 +7,8 @@ sudo n stable
 sudo ln -sf /usr/local/bin/node /usr/bin/node
 sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
 
-git clone $GIT_REPO ~/www
-cd ~/www
+git clone $GIT_REPO /vagrant/www
+cd /vagrant/www
 npm install
 non run build
 npm start
