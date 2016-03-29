@@ -16,7 +16,7 @@ Then visit [http://192.168.33.10](http://192.168.33.10).
 
 If you want to use `$GIT_REPO`, you should define follwoing commands in your app's packgage.json.
 
-* `npm buid`
+* `npm run buid`
 * `npm start`
 
 This vagrant environment will execute them automatically after provision.
