@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sudo apt-get update -y
-sudo apt-get install -y nodejs npm libcap2-bin mongodb git -y
+sudo apt-get install -y nodejs npm libcap2-bin mongodb git redis-server -y
 sudo npm install n -g
 sudo n latest
 sudo ln -sf /usr/local/bin/node /usr/bin/node
@@ -21,5 +21,6 @@ if [ -n "$GIT_REPO" ]; then
   npm start
 fi
 
-sudo npm cache clean
+sudo npm cache clean -y
+sudo apt-get autoremove -y
 sudo apt-get clean
