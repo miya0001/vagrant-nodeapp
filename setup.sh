@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sudo apt-get update -y
-sudo apt-get install -y nodejs npm libcap2-bin mongodb git redis-server -y
+sudo apt-get install nodejs npm libcap2-bin mongodb git redis-server -y
 sudo npm install n -g
 sudo n latest
 sudo ln -sf /usr/local/bin/node /usr/bin/node
